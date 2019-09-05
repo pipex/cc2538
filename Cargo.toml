@@ -2,7 +2,7 @@
 authors = ["Felipe Lalanne <felipe@lalanne.cl>"]
 description = "Peripheral access API for CC2538 System-on-Chip"
 keywords = ["no-std", "arm", "cortex-m", "cc2538"]
-license = "Apache-2.0"
+license = "MIT"
 name = "cc2538"
 version = "0.1.0"
 repository = "https://github.com/pipex/cc2538"
