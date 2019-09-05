@@ -9,6 +9,5 @@ The API includes all peripherals for the CC2538SF53 (512kb flash, 32kb RAM) vers
 ## TODO
 
 - [x] Generate API using svd2rust
-- [ ] (Maybe) include the bootloaded backdoor as a memory section to flash firmware using [cc2538-bsl](https://github.com/JelmerT/cc2538-bsl).
-- [ ] Develop some integration tests on real hardware
+- [ ] Test on real hardware
 - [ ] Allow disabling crate features for other versions of the SoC.
