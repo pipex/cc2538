@@ -1,7 +1,11 @@
 [package]
+authors = ["Felipe Lalanne <felipe@lalanne.cl>"]
+description = "Peripheral access API for CC2538 System-on-Chip"
+keywords = ["no-std", "arm", "cortex-m", "cc2538"]
+license = "Apache-2.0"
 name = "cc2538"
 version = "0.1.0"
-authors = ["Felipe Lalanne <felipe@lalanne.cl>"]
+repository = "https://github.com/pipex/cc2538"
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
