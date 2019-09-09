@@ -43,7 +43,7 @@ pub use cortex_m_rt::interrupt;
 use generic::*;
 #[doc = r"Common register and bit access and modify traits"]
 pub mod generic;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Synchronous Serial Interface"]
 pub struct SSI0 {
     _marker: PhantomData<*const ()>,
 }
@@ -61,9 +61,9 @@ impl Deref for SSI0 {
         unsafe { &*SSI0::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Synchronous Serial Interface"]
 pub mod ssi0;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Synchronous Serial Interface"]
 pub struct SSI1 {
     _marker: PhantomData<*const ()>,
 }
@@ -81,9 +81,10 @@ impl Deref for SSI1 {
         unsafe { &*SSI1::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Synchronous Serial Interface"]
 pub mod ssi1;
 #[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "UART 0"]
 pub struct UART0 {
     _marker: PhantomData<*const ()>,
 }
@@ -101,9 +102,9 @@ impl Deref for UART0 {
         unsafe { &*UART0::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "UART 0"]
 pub mod uart0;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "UART 1"]
 pub struct UART1 {
     _marker: PhantomData<*const ()>,
 }
@@ -121,9 +122,9 @@ impl Deref for UART1 {
         unsafe { &*UART1::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "UART 1"]
 pub mod uart1;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "I2C Master"]
 pub struct I2CM {
     _marker: PhantomData<*const ()>,
 }
@@ -141,9 +142,9 @@ impl Deref for I2CM {
         unsafe { &*I2CM::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "I2C Master"]
 pub mod i2cm;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "I2C Slave"]
 pub struct I2CS {
     _marker: PhantomData<*const ()>,
 }
@@ -161,9 +162,9 @@ impl Deref for I2CS {
         unsafe { &*I2CS::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "I2C Slave."]
 pub mod i2cs;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose Timers"]
 pub struct GPTIMER0 {
     _marker: PhantomData<*const ()>,
 }
@@ -181,9 +182,9 @@ impl Deref for GPTIMER0 {
         unsafe { &*GPTIMER0::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose Timers"]
 pub mod gptimer0;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose Timers"]
 pub struct GPTIMER1 {
     _marker: PhantomData<*const ()>,
 }
@@ -201,9 +202,9 @@ impl Deref for GPTIMER1 {
         unsafe { &*GPTIMER1::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose Timers"]
 pub mod gptimer1;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose Timers"]
 pub struct GPTIMER2 {
     _marker: PhantomData<*const ()>,
 }
@@ -221,9 +222,9 @@ impl Deref for GPTIMER2 {
         unsafe { &*GPTIMER2::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose Timers"]
 pub mod gptimer2;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose Timers"]
 pub struct GPTIMER3 {
     _marker: PhantomData<*const ()>,
 }
@@ -241,9 +242,9 @@ impl Deref for GPTIMER3 {
         unsafe { &*GPTIMER3::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose Timers"]
 pub mod gptimer3;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "RF Core FFSM"]
 pub struct RFCORE_FFSM {
     _marker: PhantomData<*const ()>,
 }
@@ -261,9 +262,9 @@ impl Deref for RFCORE_FFSM {
         unsafe { &*RFCORE_FFSM::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "RF Core FFSM"]
 pub mod rfcore_ffsm;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "RF Core XREG"]
 pub struct RFCORE_XREG {
     _marker: PhantomData<*const ()>,
 }
@@ -281,9 +282,9 @@ impl Deref for RFCORE_XREG {
         unsafe { &*RFCORE_XREG::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "RF Core XREG"]
 pub mod rfcore_xreg;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "RF Core SFR"]
 pub struct RFCORE_SFR {
     _marker: PhantomData<*const ()>,
 }
@@ -301,9 +302,9 @@ impl Deref for RFCORE_SFR {
         unsafe { &*RFCORE_SFR::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "RF Core SFR"]
 pub mod rfcore_sfr;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "USB Module"]
 pub struct USB {
     _marker: PhantomData<*const ()>,
 }
@@ -321,9 +322,9 @@ impl Deref for USB {
         unsafe { &*USB::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "USB Module"]
 pub mod usb;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "AES Module"]
 pub struct AES {
     _marker: PhantomData<*const ()>,
 }
@@ -341,9 +342,10 @@ impl Deref for AES {
         unsafe { &*AES::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "AES Module"]
 pub mod aes;
 #[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "System Control"]
 pub struct SYS_CTRL {
     _marker: PhantomData<*const ()>,
 }
@@ -361,9 +363,9 @@ impl Deref for SYS_CTRL {
         unsafe { &*SYS_CTRL::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "System Control"]
 pub mod sys_ctrl;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Flash Control"]
 pub struct FLASH_CTRL {
     _marker: PhantomData<*const ()>,
 }
@@ -381,9 +383,9 @@ impl Deref for FLASH_CTRL {
         unsafe { &*FLASH_CTRL::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Flash Control"]
 pub mod flash_ctrl;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "IOC Module"]
 pub struct IOC {
     _marker: PhantomData<*const ()>,
 }
@@ -401,9 +403,9 @@ impl Deref for IOC {
         unsafe { &*IOC::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "IOC Module"]
 pub mod ioc;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Sleep Timer and Watchdog"]
 pub struct SMWDTHROSC {
     _marker: PhantomData<*const ()>,
 }
@@ -421,9 +423,9 @@ impl Deref for SMWDTHROSC {
         unsafe { &*SMWDTHROSC::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Sleep Timer and Watchdog"]
 pub mod smwdthrosc;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "ANA_REGS Module"]
 pub struct ANA_REGS {
     _marker: PhantomData<*const ()>,
 }
@@ -441,9 +443,9 @@ impl Deref for ANA_REGS {
         unsafe { &*ANA_REGS::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "ANA_REGS Module"]
 pub mod ana_regs;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "ADC Module"]
 pub struct SOC_ADC {
     _marker: PhantomData<*const ()>,
 }
@@ -461,9 +463,9 @@ impl Deref for SOC_ADC {
         unsafe { &*SOC_ADC::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "ADC Module"]
 pub mod soc_adc;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose I/O"]
 pub struct GPIO_A {
     _marker: PhantomData<*const ()>,
 }
@@ -481,9 +483,9 @@ impl Deref for GPIO_A {
         unsafe { &*GPIO_A::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose I/O"]
 pub mod gpio_a;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose I/O"]
 pub struct GPIO_B {
     _marker: PhantomData<*const ()>,
 }
@@ -501,9 +503,9 @@ impl Deref for GPIO_B {
         unsafe { &*GPIO_B::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose I/O"]
 pub mod gpio_b;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose I/O"]
 pub struct GPIO_C {
     _marker: PhantomData<*const ()>,
 }
@@ -521,9 +523,9 @@ impl Deref for GPIO_C {
         unsafe { &*GPIO_C::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose I/O"]
 pub mod gpio_c;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose I/O"]
 pub struct GPIO_D {
     _marker: PhantomData<*const ()>,
 }
@@ -541,9 +543,9 @@ impl Deref for GPIO_D {
         unsafe { &*GPIO_D::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "General Purpose I/O"]
 pub mod gpio_d;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Micro DMA Controller"]
 pub struct UDMA {
     _marker: PhantomData<*const ()>,
 }
@@ -561,9 +563,9 @@ impl Deref for UDMA {
         unsafe { &*UDMA::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Micro DMA Controller"]
 pub mod udma;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "STTEST"]
 pub struct STTEST {
     _marker: PhantomData<*const ()>,
 }
@@ -581,9 +583,9 @@ impl Deref for STTEST {
         unsafe { &*STTEST::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "STTEST"]
 pub mod sttest;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Public Key Accelerator Engine"]
 pub struct PKA {
     _marker: PhantomData<*const ()>,
 }
@@ -601,9 +603,9 @@ impl Deref for PKA {
         unsafe { &*PKA::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "Public Key Accelerator Engine"]
 pub mod pka;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "CCTEST"]
 pub struct CCTEST {
     _marker: PhantomData<*const ()>,
 }
@@ -621,7 +623,7 @@ impl Deref for CCTEST {
         unsafe { &*CCTEST::ptr() }
     }
 }
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
+#[doc = "CCTEST"]
 pub mod cctest;
 #[no_mangle]
 static mut DEVICE_PERIPHERALS: bool = false;
