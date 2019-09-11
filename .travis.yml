@@ -27,7 +27,7 @@ script: |
   mv device.x.bak device.x
 
   # Check that there are no differences
-  git diff --summary
+  git diff-index --quiet HEAD -- || (echo "Generated source code does not match HEAD" >&2 ; false )
   
   # Check that the crate builds correctly
   cargo build;
