@@ -43,7 +43,7 @@ pub use cortex_m_rt::interrupt;
 use generic::*;
 #[doc = r"Common register and bit access and modify traits"]
 pub mod generic;
-#[doc = "Synchronous Serial Interface"]
+#[doc = "Synchronous Serial Interface."]
 pub struct SSI0 {
     _marker: PhantomData<*const ()>,
 }
@@ -61,9 +61,9 @@ impl Deref for SSI0 {
         unsafe { &*SSI0::ptr() }
     }
 }
-#[doc = "Synchronous Serial Interface"]
+#[doc = "Synchronous Serial Interface."]
 pub mod ssi0;
-#[doc = "Synchronous Serial Interface"]
+#[doc = "Synchronous Serial Interface."]
 pub struct SSI1 {
     _marker: PhantomData<*const ()>,
 }
@@ -81,10 +81,9 @@ impl Deref for SSI1 {
         unsafe { &*SSI1::ptr() }
     }
 }
-#[doc = "Synchronous Serial Interface"]
+#[doc = "Synchronous Serial Interface."]
 pub mod ssi1;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
-#[doc = "UART 0"]
+#[doc = "UART."]
 pub struct UART0 {
     _marker: PhantomData<*const ()>,
 }
@@ -102,9 +101,9 @@ impl Deref for UART0 {
         unsafe { &*UART0::ptr() }
     }
 }
-#[doc = "UART 0"]
+#[doc = "UART."]
 pub mod uart0;
-#[doc = "UART 1"]
+#[doc = "UART."]
 pub struct UART1 {
     _marker: PhantomData<*const ()>,
 }
@@ -122,9 +121,9 @@ impl Deref for UART1 {
         unsafe { &*UART1::ptr() }
     }
 }
-#[doc = "UART 1"]
+#[doc = "UART."]
 pub mod uart1;
-#[doc = "I2C Master"]
+#[doc = "I2C Master."]
 pub struct I2CM {
     _marker: PhantomData<*const ()>,
 }
@@ -142,9 +141,9 @@ impl Deref for I2CM {
         unsafe { &*I2CM::ptr() }
     }
 }
-#[doc = "I2C Master"]
+#[doc = "I2C Master."]
 pub mod i2cm;
-#[doc = "I2C Slave"]
+#[doc = "I2C Slave."]
 pub struct I2CS {
     _marker: PhantomData<*const ()>,
 }
@@ -164,7 +163,7 @@ impl Deref for I2CS {
 }
 #[doc = "I2C Slave."]
 pub mod i2cs;
-#[doc = "General Purpose Timers"]
+#[doc = "General Purpose Timers."]
 pub struct GPTIMER0 {
     _marker: PhantomData<*const ()>,
 }
@@ -182,9 +181,9 @@ impl Deref for GPTIMER0 {
         unsafe { &*GPTIMER0::ptr() }
     }
 }
-#[doc = "General Purpose Timers"]
+#[doc = "General Purpose Timers."]
 pub mod gptimer0;
-#[doc = "General Purpose Timers"]
+#[doc = "General Purpose Timers."]
 pub struct GPTIMER1 {
     _marker: PhantomData<*const ()>,
 }
@@ -202,9 +201,9 @@ impl Deref for GPTIMER1 {
         unsafe { &*GPTIMER1::ptr() }
     }
 }
-#[doc = "General Purpose Timers"]
+#[doc = "General Purpose Timers."]
 pub mod gptimer1;
-#[doc = "General Purpose Timers"]
+#[doc = "General Purpose Timers."]
 pub struct GPTIMER2 {
     _marker: PhantomData<*const ()>,
 }
@@ -222,9 +221,9 @@ impl Deref for GPTIMER2 {
         unsafe { &*GPTIMER2::ptr() }
     }
 }
-#[doc = "General Purpose Timers"]
+#[doc = "General Purpose Timers."]
 pub mod gptimer2;
-#[doc = "General Purpose Timers"]
+#[doc = "General Purpose Timers."]
 pub struct GPTIMER3 {
     _marker: PhantomData<*const ()>,
 }
@@ -242,9 +241,9 @@ impl Deref for GPTIMER3 {
         unsafe { &*GPTIMER3::ptr() }
     }
 }
-#[doc = "General Purpose Timers"]
+#[doc = "General Purpose Timers."]
 pub mod gptimer3;
-#[doc = "RF Core FFSM"]
+#[doc = "RF Core FFSM."]
 pub struct RFCORE_FFSM {
     _marker: PhantomData<*const ()>,
 }
@@ -262,9 +261,9 @@ impl Deref for RFCORE_FFSM {
         unsafe { &*RFCORE_FFSM::ptr() }
     }
 }
-#[doc = "RF Core FFSM"]
+#[doc = "RF Core FFSM."]
 pub mod rfcore_ffsm;
-#[doc = "RF Core XREG"]
+#[doc = "RF Core XREG."]
 pub struct RFCORE_XREG {
     _marker: PhantomData<*const ()>,
 }
@@ -282,9 +281,9 @@ impl Deref for RFCORE_XREG {
         unsafe { &*RFCORE_XREG::ptr() }
     }
 }
-#[doc = "RF Core XREG"]
+#[doc = "RF Core XREG."]
 pub mod rfcore_xreg;
-#[doc = "RF Core SFR"]
+#[doc = "RF Core SFR."]
 pub struct RFCORE_SFR {
     _marker: PhantomData<*const ()>,
 }
@@ -302,9 +301,9 @@ impl Deref for RFCORE_SFR {
         unsafe { &*RFCORE_SFR::ptr() }
     }
 }
-#[doc = "RF Core SFR"]
+#[doc = "RF Core SFR."]
 pub mod rfcore_sfr;
-#[doc = "USB Module"]
+#[doc = "USB Module."]
 pub struct USB {
     _marker: PhantomData<*const ()>,
 }
@@ -322,9 +321,9 @@ impl Deref for USB {
         unsafe { &*USB::ptr() }
     }
 }
-#[doc = "USB Module"]
+#[doc = "USB Module."]
 pub mod usb;
-#[doc = "AES Module"]
+#[doc = "AES Module."]
 pub struct AES {
     _marker: PhantomData<*const ()>,
 }
@@ -342,10 +341,9 @@ impl Deref for AES {
         unsafe { &*AES::ptr() }
     }
 }
-#[doc = "AES Module"]
+#[doc = "AES Module."]
 pub mod aes;
-#[doc = "Register fields should be considered static unless otherwise noted as dynamic."]
-#[doc = "System Control"]
+#[doc = "System Control."]
 pub struct SYS_CTRL {
     _marker: PhantomData<*const ()>,
 }
@@ -363,9 +361,9 @@ impl Deref for SYS_CTRL {
         unsafe { &*SYS_CTRL::ptr() }
     }
 }
-#[doc = "System Control"]
+#[doc = "System Control."]
 pub mod sys_ctrl;
-#[doc = "Flash Control"]
+#[doc = "Flash Control."]
 pub struct FLASH_CTRL {
     _marker: PhantomData<*const ()>,
 }
@@ -383,9 +381,9 @@ impl Deref for FLASH_CTRL {
         unsafe { &*FLASH_CTRL::ptr() }
     }
 }
-#[doc = "Flash Control"]
+#[doc = "Flash Control."]
 pub mod flash_ctrl;
-#[doc = "IOC Module"]
+#[doc = "IOC Module."]
 pub struct IOC {
     _marker: PhantomData<*const ()>,
 }
@@ -403,9 +401,9 @@ impl Deref for IOC {
         unsafe { &*IOC::ptr() }
     }
 }
-#[doc = "IOC Module"]
+#[doc = "IOC Module."]
 pub mod ioc;
-#[doc = "Sleep Timer and Watchdog"]
+#[doc = "Sleep Timer and Watchdog."]
 pub struct SMWDTHROSC {
     _marker: PhantomData<*const ()>,
 }
@@ -423,9 +421,9 @@ impl Deref for SMWDTHROSC {
         unsafe { &*SMWDTHROSC::ptr() }
     }
 }
-#[doc = "Sleep Timer and Watchdog"]
+#[doc = "Sleep Timer and Watchdog."]
 pub mod smwdthrosc;
-#[doc = "ANA_REGS Module"]
+#[doc = "ANA_REGS Module."]
 pub struct ANA_REGS {
     _marker: PhantomData<*const ()>,
 }
@@ -443,9 +441,9 @@ impl Deref for ANA_REGS {
         unsafe { &*ANA_REGS::ptr() }
     }
 }
-#[doc = "ANA_REGS Module"]
+#[doc = "ANA_REGS Module."]
 pub mod ana_regs;
-#[doc = "ADC Module"]
+#[doc = "ADC Module."]
 pub struct SOC_ADC {
     _marker: PhantomData<*const ()>,
 }
@@ -463,9 +461,9 @@ impl Deref for SOC_ADC {
         unsafe { &*SOC_ADC::ptr() }
     }
 }
-#[doc = "ADC Module"]
+#[doc = "ADC Module."]
 pub mod soc_adc;
-#[doc = "General Purpose I/O"]
+#[doc = "General Purpose I/O."]
 pub struct GPIO_A {
     _marker: PhantomData<*const ()>,
 }
@@ -483,9 +481,9 @@ impl Deref for GPIO_A {
         unsafe { &*GPIO_A::ptr() }
     }
 }
-#[doc = "General Purpose I/O"]
+#[doc = "General Purpose I/O."]
 pub mod gpio_a;
-#[doc = "General Purpose I/O"]
+#[doc = "General Purpose I/O."]
 pub struct GPIO_B {
     _marker: PhantomData<*const ()>,
 }
@@ -503,9 +501,9 @@ impl Deref for GPIO_B {
         unsafe { &*GPIO_B::ptr() }
     }
 }
-#[doc = "General Purpose I/O"]
+#[doc = "General Purpose I/O."]
 pub mod gpio_b;
-#[doc = "General Purpose I/O"]
+#[doc = "General Purpose I/O."]
 pub struct GPIO_C {
     _marker: PhantomData<*const ()>,
 }
@@ -523,9 +521,9 @@ impl Deref for GPIO_C {
         unsafe { &*GPIO_C::ptr() }
     }
 }
-#[doc = "General Purpose I/O"]
+#[doc = "General Purpose I/O."]
 pub mod gpio_c;
-#[doc = "General Purpose I/O"]
+#[doc = "General Purpose I/O."]
 pub struct GPIO_D {
     _marker: PhantomData<*const ()>,
 }
@@ -543,9 +541,9 @@ impl Deref for GPIO_D {
         unsafe { &*GPIO_D::ptr() }
     }
 }
-#[doc = "General Purpose I/O"]
+#[doc = "General Purpose I/O."]
 pub mod gpio_d;
-#[doc = "Micro DMA Controller"]
+#[doc = "Micro DMA Controller."]
 pub struct UDMA {
     _marker: PhantomData<*const ()>,
 }
@@ -563,9 +561,9 @@ impl Deref for UDMA {
         unsafe { &*UDMA::ptr() }
     }
 }
-#[doc = "Micro DMA Controller"]
+#[doc = "Micro DMA Controller."]
 pub mod udma;
-#[doc = "STTEST"]
+#[doc = "STTEST."]
 pub struct STTEST {
     _marker: PhantomData<*const ()>,
 }
@@ -583,9 +581,9 @@ impl Deref for STTEST {
         unsafe { &*STTEST::ptr() }
     }
 }
-#[doc = "STTEST"]
+#[doc = "STTEST."]
 pub mod sttest;
-#[doc = "Public Key Accelerator Engine"]
+#[doc = "Public Key Accelerator Engine."]
 pub struct PKA {
     _marker: PhantomData<*const ()>,
 }
@@ -603,9 +601,9 @@ impl Deref for PKA {
         unsafe { &*PKA::ptr() }
     }
 }
-#[doc = "Public Key Accelerator Engine"]
+#[doc = "Public Key Accelerator Engine."]
 pub mod pka;
-#[doc = "CCTEST"]
+#[doc = "CCTEST."]
 pub struct CCTEST {
     _marker: PhantomData<*const ()>,
 }
@@ -623,7 +621,7 @@ impl Deref for CCTEST {
         unsafe { &*CCTEST::ptr() }
     }
 }
-#[doc = "CCTEST"]
+#[doc = "CCTEST."]
 pub mod cctest;
 #[no_mangle]
 static mut DEVICE_PERIPHERALS: bool = false;
