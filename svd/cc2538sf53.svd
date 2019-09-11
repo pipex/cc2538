@@ -1,15 +1,15 @@
 <!-- Created by tixml2svd; https://github.com/dhoove/tixml2svd -->
 <?xml version="1.0" encoding="utf-8"?>
 <device>
-  <name>CC2538</name>
-  <version>1.2</version>
-  <description>CC2538 System-on-Chip Solution for 2.4-GHz IEEE 802.15.4 Applications</description>
+  <name>CC2652</name>
+  <version>1.1</version>
+  <description>CC2652</description>
   <cpu>
-    <name>CM3</name>
-    <revision>r2p0</revision>
+    <name>CM4</name>
+    <revision>r1p0</revision>
     <endian>little</endian>
     <mpuPresent>true</mpuPresent>
-    <fpuPresent>false</fpuPresent>
+    <fpuPresent>true</fpuPresent>
     <nvicPrioBits>3</nvicPrioBits>
     <vendorSystickConfig>false</vendorSystickConfig>
   </cpu>
