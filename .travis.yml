@@ -1,0 +1,39 @@
+language: rust
+rust:
+  - stable
+notifications:
+  email: false
+
+before_install:
+  # install rustfmt, svd2rust and form
+  - rustup component add rustfmt
+  - cargo install svd2rust form
+
+script: |
+  TRAVIS_TAG=$(echo $TRAVIS_TAG | cut -d v -f 2)
+
+  # Backup device.x
+  mv device.x device.x.bak
+  # Patch svd file
+  patch -p1 svd/cc2538sf53.svd < svd/cc2538sf53.patch
+
+  # Generate new source code
+  svd2rust -i svd/cc2538sf53.svd
+  rm -rf src
+  form -i lib.rs -o src/ && rm lib.rs
+  cargo fmt
+
+  # Restore device.x
+  mv device.x.bak device.x
+
+  # Check that there are no differences
+  git diff --summary
+  
+  # Check that the crate builds correctly
+  cargo build;
+
+  # Publish new crate if a tag was created
+  if [ $TRAVIS_SECURE_ENV_VARS == true ] && [ -n "$TRAVIS_TAG" ]; then
+    cargo login $CARGO_TOKEN
+    cargo publish
+  fi
