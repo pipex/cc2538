@@ -1,6 +1,6 @@
 # cc2538
 
-![crates.io badge](https://img.shields.io/crates/v/form.svg) [![Build Status](https://travis-ci.com/pipex/cc2538.svg?branch=master)](https://travis-ci.com/pipex/cc2538)
+![Crates.io](https://img.shields.io/crates/v/cc2538) [![Build Status](https://travis-ci.com/pipex/cc2538.svg?branch=master)](https://travis-ci.com/pipex/cc2538)
 
 CC2538 Peripheral Access API generated using [svd2rust](https://github.com/rust-embedded/svd2rust). The svd was generated via [tixml2svd](https://github.com/dhoove/tixml2svd).
 
