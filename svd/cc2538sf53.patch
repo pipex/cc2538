@@ -1,0 +1,294 @@
+diff --git a/svd/cc2538sf53.svd b/svd/cc2538sf53.svd
+index c1c9a91..007b815 100644
+--- a/svd/cc2538sf53.svd
++++ b/svd/cc2538sf53.svd
+@@ -1,15 +1,15 @@
+ <!-- Created by tixml2svd; https://github.com/dhoove/tixml2svd -->
+ <?xml version="1.0" encoding="utf-8"?>
+ <device>
+-  <name>CC2652</name>
+-  <version>1.1</version>
+-  <description>CC2652</description>
++  <name>CC2538</name>
++  <version>1.2</version>
++  <description>CC2538 System-on-Chip Solution for 2.4-GHz IEEE 802.15.4 Applications</description>
+   <cpu>
+-    <name>CM4</name>
+-    <revision>r1p0</revision>
++    <name>CM3</name>
++    <revision>r2p0</revision>
+     <endian>little</endian>
+     <mpuPresent>true</mpuPresent>
+-    <fpuPresent>true</fpuPresent>
++    <fpuPresent>false</fpuPresent>
+     <nvicPrioBits>3</nvicPrioBits>
+     <vendorSystickConfig>false</vendorSystickConfig>
+   </cpu>
+@@ -27,7 +27,7 @@
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>Synchronous Serial Interface.</description>
+       <registers>
+         <register>
+           <name>CR0</name>
+@@ -563,7 +563,7 @@ bit2: (DSEN) Only meaningful when the system is in deep sleep mode. This bit is
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>Synchronous Serial Interface.</description>
+       <registers>
+         <register>
+           <name>CR0</name>
+@@ -1099,7 +1099,7 @@ bit2: (DSEN) Only meaningful when the system is in deep sleep mode. This bit is
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>UART.</description>
+       <registers>
+         <register>
+           <name>DR</name>
+@@ -2391,7 +2391,7 @@ bit2: (DSEN) Only meaningful when the system is in deep sleep mode. This bit is
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>UART.</description>
+       <registers>
+         <register>
+           <name>DR</name>
+@@ -3683,7 +3683,7 @@ bit2: (DSEN) Only meaningful when the system is in deep sleep mode. This bit is
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>I2C Master.</description>
+       <registers>
+         <register>
+           <name>SA</name>
+@@ -4048,7 +4048,7 @@ This register configures the mode (master or slave) and sets the interface for t
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>I2C Slave.</description>
+       <registers>
+         <register>
+           <name>OAR</name>
+@@ -4338,7 +4338,7 @@ A read of this register returns no meaningful data.</description>
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>General Purpose Timers.</description>
+       <registers>
+         <register>
+           <name>CFG</name>
+@@ -5504,7 +5504,7 @@ The PP register provides information regarding the properties of the general-pur
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>General Purpose Timers.</description>
+       <registers>
+         <register>
+           <name>CFG</name>
+@@ -6670,7 +6670,7 @@ The PP register provides information regarding the properties of the general-pur
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>General Purpose Timers.</description>
+       <registers>
+         <register>
+           <name>CFG</name>
+@@ -7836,7 +7836,7 @@ The PP register provides information regarding the properties of the general-pur
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>General Purpose Timers.</description>
+       <registers>
+         <register>
+           <name>CFG</name>
+@@ -9002,7 +9002,7 @@ The PP register provides information regarding the properties of the general-pur
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>RF Core FFSM.</description>
+       <registers>
+         <register>
+           <name>SRCRESMASK0</name>
+@@ -9517,7 +9517,7 @@ The short address used during destination address filtering</description>
+         <size>0x00000200</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>RF Core XREG.</description>
+       <registers>
+         <register>
+           <name>FRMFILT0</name>
+@@ -12615,7 +12615,7 @@ See description of RFC_OBS_CTRL0 for details.</description>
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>RF Core SFR.</description>
+       <registers>
+         <register>
+           <name>MTCSPCFG</name>
+@@ -13278,7 +13278,7 @@ Triggered if trying to disable the radio when it is already disabled, or when tr
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>USB Module.</description>
+       <registers>
+         <register>
+           <name>ADDR</name>
+@@ -14400,7 +14400,7 @@ Reading this register unloads one byte from the EP5 OUT FIFO. Writing to this re
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>AES Module.</description>
+       <registers>
+         <register>
+           <name>DMAC_CH0_CTRL</name>
+@@ -16966,7 +16966,7 @@ Starts at 0 at first delivery of this version</description>
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>System Control.</description>
+       <registers>
+         <register>
+           <name>CLOCK_CTRL</name>
+@@ -18259,7 +18259,7 @@ Writing to this register shall be ignored if VALID = 0</description>
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>Flash Control.</description>
+       <registers>
+         <register>
+           <name>FCTL</name>
+@@ -18633,7 +18633,7 @@ Three clock cycles after reset is released, this bit is equal to the field with
+         <size>0x00000154</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>IOC Module.</description>
+       <registers>
+         <register>
+           <name>PA0_SEL</name>
+@@ -20604,7 +20604,7 @@ Three clock cycles after reset is released, this bit is equal to the field with
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>Sleep Timer and Watchdog.</description>
+       <registers>
+         <register>
+           <name>WDCTL</name>
+@@ -20916,7 +20916,7 @@ Clear explicitly to allow new capture</description>
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>ANA_REGS Module.</description>
+       <registers>
+         <register>
+           <name>IVCTRL</name>
+@@ -20989,7 +20989,7 @@ Clear explicitly to allow new capture</description>
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>ADC Module.</description>
+       <registers>
+         <register>
+           <name>ADCCON1</name>
+@@ -21311,7 +21311,7 @@ CRC result.</description>
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>General Purpose I/O.</description>
+       <registers>
+         <register>
+           <name>DATA</name>
+@@ -22744,7 +22744,7 @@ When DCEN and DCPIN are set, PB[0] becomes the on-die digital regulator status.<
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>General Purpose I/O.</description>
+       <registers>
+         <register>
+           <name>DATA</name>
+@@ -24177,7 +24177,7 @@ When DCEN and DCPIN are set, PB[0] becomes the on-die digital regulator status.<
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>General Purpose I/O.</description>
+       <registers>
+         <register>
+           <name>DATA</name>
+@@ -25610,7 +25610,7 @@ When DCEN and DCPIN are set, PB[0] becomes the on-die digital regulator status.<
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>General Purpose I/O.</description>
+       <registers>
+         <register>
+           <name>DATA</name>
+@@ -27043,7 +27043,7 @@ When DCEN and DCPIN are set, PB[0] becomes the on-die digital regulator status.<
+         <size>0x00001000</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>Micro DMA Controller.</description>
+       <registers>
+         <register>
+           <name>STAT</name>
+@@ -27735,7 +27735,7 @@ See section titled "Channel Assignments" in Micro Direct Memory Access chapter.<
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>STTEST.</description>
+       <registers>
+         <register>
+           <name>LPBKGPT</name>
+@@ -28000,7 +28000,7 @@ See section titled "Channel Assignments" in Micro Direct Memory Access chapter.<
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>Public Key Accelerator Engine.</description>
+       <registers>
+         <register>
+           <name>APTR</name>
+@@ -28610,7 +28610,7 @@ Patches are used to remove bugs without changing the functionality or interface
+         <size>0x00000100</size>
+         <usage>registers</usage>
+       </addressBlock>
+-      <description>Register fields should be considered static unless otherwise noted as dynamic.</description>
++      <description>CCTEST.</description>
+       <registers>
+         <register>
+           <name>IO</name>
+@@ -28966,4 +28966,4 @@ When this bit is cleared to 0 (default state) the USB module cannot change the s
+       </registers>
+     </peripheral>
+   </peripherals>
+-</device>
+\ No newline at end of file
++</device>
